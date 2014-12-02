@@ -1,4 +1,8 @@
-@media(max-width:760px){
+body {
+  background: white;
+}
+
+@media(max-width:768px){
   #cc-header {
     border: 3px solid black;
     font-size: 50px;
@@ -23,20 +27,39 @@
     border: 3px solid black;
     font-size: 15px;
     margin: 20px 0 0 0;
+    padding: 10px 0;
+    text-align: left;
   }
-  .inputs {
+  #inputs {
     text-align: center;
     border: 3px solid black;
     font-size: 55px;
     margin: 20px 0 0 0;
     padding: 10px 0;
   }
+  #limit-bar {
+    border: 3px solid black;
+    font-size: 18px;
+    margin: 20px 0 0 0;
+    text-align: center;
+    padding: 3px 0;
+  }
+  .hihi {
+    text-align: center;
+  }
+  .input-bar {
+    z-index: -1;
+    width: 100%;
+  }
+  .start-button{
+    z-index: 1;
+  }
 }
 
-@media(min-width:760px){
+@media(min-width:768px){
   #cc-header {
     border: 3px solid black;
-    font-size: 40px;
+    font-size: 50px;
     text-align: center;
     padding: 30px 0;
   }
@@ -58,13 +81,24 @@
     border: 3px solid black;
     font-size: 15px;
     margin: 20px 0 0 0;
+    text-align: left;
   }
-  .inputs {
+  #inputs {
     text-align: center;
     border: 3px solid black;
     font-size: 75px;
     margin: 20px 0 0 0;
     padding: 15px 0;
+  }
+  #limit-bar {
+    border: 3px solid black;
+    font-size: 18px;
+    margin: 20px 0 0 0;
+    text-align: center;
+    padding: 3px 0;
+  }
+  .hihi {
+    text-align: center;
   }
 }
 
@@ -93,12 +127,24 @@
     border: 3px solid black;
     font-size: 15px;
     margin: 20px 0 0 0;
+    text-align: left;
   }
-  .inputs {
+  #inputs {
     text-align: center;
     border: 3px solid black;
     font-size: 75px;
     margin: 20px 0 0 0;
     padding: 15px 0;
+  }
+  #limit-bar {
+    border: 3px solid black;
+    font-size: 18px;
+    margin: 20px 0 0 0;
+    text-align: center;
+    padding: 3px 0;
+  }
+  .hihi {
+    text-align: center;
+    padding: 0 5px;
   }
 }
