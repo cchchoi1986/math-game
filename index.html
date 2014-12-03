@@ -11,11 +11,12 @@
   <title>10 Seconds of MATH!</title>
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
   <link href="http://getbootstrap.com/examples/dashboard/dashboard.css" rel="stylesheet">
+  <link href='http://fonts.googleapis.com/css?family=Permanent+Marker|Cherry+Cream+Soda|Syncopate|Russo+One|Sigmar+One|Gloria+Hallelujah|Architects+Daughter|Audiowide|Rock+Salt|Luckiest+Guy' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" type="text/css" href="/css/custom.css">
   <link rel="icon" href="/images/mental-math-trainer-favicon.ico">
   
   
-  <script src="js/ie-emulation-modes-warning.js"></script>
+  
   <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="//code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css">
@@ -35,10 +36,10 @@
     
     <div class="row">
       <div class="col-xs-4">
-        <div id="timer" class="">...
+        <div id="timer" class="">. . .
         </div>
       </div>
-      <div class="col-xs-offset-1 col-xs-7">
+      <div class="col-xs-8 question-block">
         <div id="questions">Ready!
         </div>
       </div>
@@ -48,16 +49,16 @@
       <div class="col-xs-12">
         <div class="choice-buttons col-xs-4">
           <ul>
-            <li class="ticker"><input type="checkbox">Addition</li>
-            <li class="ticker"><input type="checkbox">Multiplication</li>
-            <li class="ticker"><input type="checkbox">x^2 powers</li>
+            <li class="ticker"><input id="add" data-symbol="add" type="checkbox" checked>+ Addition</li>
+            <li class="ticker"><input id="multiply" data-symbol="multiply" type="checkbox">x Multiplication</li>
+            <li class="ticker"><input id="squared" data-symbol="squared" type="checkbox">x² Powers</li>
           </ul>
         </div>
         <div class="choice-buttons col-xs-4">
           <ul>
-             <li class="ticker"><input type="checkbox">Subtraction</li>
-             <li class="ticker"><input type="checkbox">Division</li>
-             <li class="ticker"><input type="checkbox">Square Roots</li>
+             <li class="ticker"><input id="subtract" data-symbol="subtract" type="checkbox">- Subtraction</li>
+             <li class="ticker"><input id="divide" data-symbol="divide" type="checkbox">÷ Division</li>
+             <li class="ticker"><input id="sqroot" data-symbol="sqroot" type="checkbox">√x Sq roots</li>
           </ul>
         </div>
         <div id="limit-bar" class="col-xs-4">
@@ -81,3 +82,4 @@
 </body>
 
 </html>
+<!-- <script src="js/ie-emulation-modes-warning.js"></script> -->
