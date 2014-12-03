@@ -4,6 +4,8 @@ var qBank;
 var nextLevel;
 var timer;
 var highScore;
+var userName;
+var jsonResponse;
 
 $(document).ready(function(){
   $('#inputs .input-bar').hide();
@@ -99,6 +101,8 @@ $(document).ready(function(){
           highScore++;
           timeLeft+=1.3;
           $('#questions').effect('highlight', 'faster');
+          $('#cashMoney')[0].load();
+          $('#cashMoney')[0].play();
           // $('.question-block').prepend('<div id="questions">');
           ask = qBank();
           $('#questions').text(ask);
@@ -127,8 +131,18 @@ $(document).ready(function(){
         }
         else {
           clearInterval(timer);
-          $('#timer').text(highScore+"pts");
-          $('#questions').text('GAME OVER');
+          $('#gameOver')[0].load();
+          $('#gameOver')[0].play();
+          userName = prompt("What's your name?");
+          $.ajax({
+            type: "POST",
+            url: "https://stark-eyrie-2329.herokuapp.com/leaders/create",
+            data: {'name':userName, 'score':highScore},
+            success: function(response){
+              $('#timer').text(highScore+"pts");
+              $('#questions').text('Rank: Top '+ (response.ranking*100).toFixed(0)+"%");
+            }
+          });
           $('.start-button').text('REPLAY?');
           $('.input-bar').hide();
           $('.start-button').show();
