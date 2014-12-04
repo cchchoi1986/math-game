@@ -23,13 +23,6 @@ $(document).ready(function(){
   }
 
   { //Strip function
-    // stripp = function(x){
-    //   return x.replace('+"+"+','+');
-    //   // x = x.replace('+"-"+','-');
-    //   // x = x.replace('+"x"+','*');
-    //   // x = x.replace('+"/"+','/');
-    //   // return x;
-    // };
 
     stripp = function(input){
       var output = input;
@@ -101,8 +94,8 @@ $(document).ready(function(){
           highScore++;
           timeLeft+=1.3;
           $('#questions').effect('highlight', 'faster');
-          $('#cashMoney')[0].load();
-          $('#cashMoney')[0].play();
+          // $('#cashMoney')[0].load();
+          // $('#cashMoney')[0].play();
           // $('.question-block').prepend('<div id="questions">');
           ask = qBank();
           $('#questions').text(ask);
@@ -146,6 +139,7 @@ $(document).ready(function(){
           $('.start-button').text('REPLAY?');
           $('.input-bar').hide();
           $('.start-button').show();
+          $('.')
         }
       }, 1000);
     });

@@ -9,22 +9,33 @@
   <meta name="description" content="">
   <meta name="author" content="">
   <title>10 Seconds of MATH!</title>
+
+<!-- jquery library -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<!-- jquery UI library -->
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
   <link href="http://getbootstrap.com/examples/dashboard/dashboard.css" rel="stylesheet">
   <link href='http://fonts.googleapis.com/css?family=Permanent+Marker|Cherry+Cream+Soda|Syncopate|Russo+One|Sigmar+One|Gloria+Hallelujah|Architects+Daughter|Audiowide|Rock+Salt|Luckiest+Guy' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" type="text/css" href="/css/custom.css">
   <link rel="icon" href="/images/mental-math-trainer-favicon.ico">
   
-  
-  
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="//code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css">
   <script type="text/javascript" src="https://code.jquery.com/ui/1.11.2/jquery-ui.min.js"></script>
   <script src="js/application.js"></script>
 </head>
 
 <body>
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+  </script>
 
   <section class="container">
     <div class="row">
@@ -73,7 +84,9 @@
     
     <div class="row">
       <div class="col-xs-12">
-        <div id="inputs"><input class="col-xs-12 input-bar" type="numbers"><button class="start-button">Click to Play</button></div>
+        <div id="inputs"><input class="col-xs-12 input-bar" type="numbers"><button class="start-button">Click to Play</button>
+        </div>
+        <div class="fb-share-button" data-href="http://10secondsofmathcchchoi1986.bitballoon.com/" data-layout="button"></div>
       </div>
     </div>
     <audio id="cashMoney" src="/audio/cash-register-05.wav"></audio>
